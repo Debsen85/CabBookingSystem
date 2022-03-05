@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+	<display-name>Web Uber</display-name>
+	<welcome-file-list>
+		<welcome-file>JSP/Index.jsp</welcome-file>
+	</welcome-file-list>
+	<display-name>Web Uber</display-name>
+	
+	<servlet>
+		<servlet-name>Server14</servlet-name>
+		<servlet-class>com.project.dao.AdminDriverSearch</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Server14</servlet-name>
+		<url-pattern>/S14</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Server13</servlet-name>
+		<servlet-class>com.project.dao.AdminDriverDelete</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Server13</servlet-name>
+		<url-pattern>/S13</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Server12</servlet-name>
+		<servlet-class>com.project.dao.AdminDriverAdd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Server12</servlet-name>
+		<url-pattern>/S12</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Server11</servlet-name>
+		<servlet-class>com.project.dao.SuccessDao</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Server11</servlet-name>
+		<url-pattern>/S11</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Server10</servlet-name>
+		<servlet-class>com.project.dao.CancelDao</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Server10</servlet-name>
+		<url-pattern>/S10</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Server9</servlet-name>
+		<servlet-class>com.project.dao.DetailDriverDao</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Server9</servlet-name>
+		<url-pattern>/S9</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Server8</servlet-name>
+		<servlet-class>com.project.dao.PremiumUserDao</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Server8</servlet-name>
+		<url-pattern>/S8</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Server7</servlet-name>
+		<servlet-class>com.project.dao.SedanUserDao</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Server7</servlet-name>
+		<url-pattern>/S7</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Server6</servlet-name>
+		<servlet-class>com.project.dao.MiniUserDao</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Server6</servlet-name>
+		<url-pattern>/S6</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Server5</servlet-name>
+		<servlet-class>com.project.dao.BikeUserDao</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Server5</servlet-name>
+		<url-pattern>/S5</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Server4</servlet-name>
+		<servlet-class>com.project.dao.CabUserDao</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Server4</servlet-name>
+		<url-pattern>/S4</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Server3</servlet-name>
+		<servlet-class>com.project.dao.PasswordUserDao</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Server3</servlet-name>
+		<url-pattern>/S3</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Server2</servlet-name>
+		<servlet-class>com.project.dao.SignUserDao</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Server2</servlet-name>
+		<url-pattern>/S2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Server1</servlet-name>
+		<servlet-class>com.project.dao.LogUserDao</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Server1</servlet-name>
+		<url-pattern>/S1</url-pattern>
+	</servlet-mapping>
+</web-app>
+

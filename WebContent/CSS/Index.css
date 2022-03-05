@@ -1,0 +1,246 @@
+::-webkit-scrollbar {display: none;}
+
+body {
+	margin: 0;
+	font-family: Arial;
+}
+
+#d2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding: 0;	
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;	
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active1) {
+	background-color: #111;
+	text-decoration: none;
+}
+
+.active1 {
+	background-color: darkgrey;
+	text-decoration: none;
+}
+
+.active1:hover {
+	background-color: lightyellow;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.mySlides {
+	display: none;
+}
+
+.img {
+	vertical-align: middle;
+	filter: brightness(20%);
+	height: 720px;
+}
+
+p {
+	text-align: justify;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  max-height: 90%;
+  position: absolute;
+  top: 48px;
+  margin: 0;  
+}
+
+.text {  
+  position: absolute;
+  text-align: left;  
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4%;
+  padding-right: 50%;
+  font-size: 16px;
+  color: #f2f2f2;
+  width: 100%;
+  top: 158px;  
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 25px}
+}
+
+table {
+  padding: 10px;  
+}
+
+.modal {
+  display: none; 
+  position: absolute;
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow-y: scroll; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  position: absolute;
+  background: linear-gradient(to right, #ef32d9, #89fffd);	
+  margin: -3% auto auto 60%;
+  padding: 0;
+  border: none;
+  max-height: calc(550px);
+  border-radius: 15px;
+  width: 35%;
+  overflow-y: scroll; 
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 10px;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  color: white;
+}
+
+.modal-body {padding: 10px;}
+
+input {
+	width: 250px;
+	border: 2px solid cyan;
+	height: 35px;
+	border-radius: 5px;
+}
+
+input:hover {
+	background-color: darkgrey;
+	border: 2px solid orange;
+}
+
+input:focus {
+	background-color: lightgrey;
+	border: 2px solid olive;
+	outline: none;
+	
+}
+
+#But1 {
+	width: 80px;
+	padding: 7px 10px 7px 10px;
+	color: black;
+	background-color: dodgerblue;
+	font-weight: bold;
+	border: none;
+	border-radius: 5%;
+	outline: none;
+}
+#But1:hover {
+	background-color: black;
+	color: red;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#But2 {
+	width: 80px;
+	padding: 7px 10px 7px 10px;
+	color: black;
+	background-color: dodgerblue;
+	font-weight: bold;
+	border: none;
+	border-radius: 5%;
+	outline: none;
+}
+#But2:hover {
+	background-color: black;
+	color: red;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

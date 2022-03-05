@@ -1,0 +1,293 @@
+::-webkit-scrollbar {display: none;}
+
+body {
+	margin: 0;
+	font-family: Arial;
+}
+
+#d2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding: 0;	
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;	
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active1) {
+	background-color: #111;
+	text-decoration: none;
+}
+
+.active1 {
+	background-color: darkgrey;
+	text-decoration: none;
+}
+
+.active1:hover {
+	background-color: lightyellow;
+	text-decoration: none;
+}
+
+.Back {
+	max-width: 100%;
+	max-height: 90%;
+	position: absolute;
+	top: 48px;
+	margin: 0;
+}
+
+.img {
+	vertical-align: middle;
+	filter: brightness(20%);
+	height: 720px;
+}
+
+.crazy {
+	margin-top: 3%;
+	display: flex;
+}
+
+.main {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 4%;
+	padding-right: 4%;
+	font-size: 16px;
+	color: black;
+	width: 100%;
+	text-align: center;
+	top: 18px;
+}
+
+.text {
+	width: 50%;
+	max-height: calc(620px);
+	overflow-y: scroll; 	
+	border-radius: 3%;
+	border: 2px solid white;
+	background: linear-gradient(to right, #8a2387, #e94057, #f27121);	
+	padding: 10px;
+	margin-right: 4%;
+	opacity: 0.85;
+	border: 2px solid #fff;
+	-moz-box-shadow: 0px 6px 5px #ccc;
+	-webkit-box-shadow: 0px 6px 5px #ccc;
+	box-shadow: 0px 6px 5px #ccc;
+	transition: all .2s ease-in-out; 
+}
+
+table {
+	text-align: left;
+	width: 100%;	
+}
+
+.image {
+	text-align: center;
+	width: 50%;
+	max-height: calc(620px);
+	overflow-y: scroll; 	
+	border-radius: 3%;
+	border: 2px solid white;
+	background: linear-gradient(to right, #8a2387, #e94057, #f27121);	
+	padding: 10px;
+	margin-right: 4%;
+	margin-left: 4%;
+	border: 2px solid #fff;
+	-moz-box-shadow: 0px 6px 5px #ccc;
+	-webkit-box-shadow: 0px 6px 5px #ccc;
+	box-shadow: 0px 6px 5px #ccc;	
+	opacity: 0.85;	
+	transition: all .2s ease-in-out; 
+}
+
+#map {
+	width: 100%;
+	height: 400px;
+	border-radius: 15px;	
+}
+
+input {
+	width: 250px;
+	border: 2px solid cyan;
+	height: 35px;
+	border-radius: 5px;
+}
+
+input:hover {
+	background-color: darkgrey;
+	border: 2px solid orange;
+}
+
+input:focus {
+	background-color: lightgrey;
+	border: 2px solid olive;
+	outline: none;
+	
+}
+
+#But1 {
+	width: 120px;
+	padding: 5px;
+	color: black;
+	background-color: dodgerblue;
+	font-weight: bold;
+	border: none;
+	border-radius: 15px;
+	outline: none;
+}
+#But1:hover {
+	background-color: black;
+	color: red;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.text:hover {
+	transform: scale(1.1);
+}
+
+.image:hover {
+	transform: scale(1.1);
+}
+
+table {
+  padding: 10px;  
+}
+
+.modal {
+  display: none; 
+  position: absolute;
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow-y: scroll; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  position: absolute;
+  background: linear-gradient(to right, #ef32d9, #89fffd);  
+  margin: -3% 60% auto auto;
+  padding: 0;
+  border: none;
+  max-height: calc(550px);
+  border-radius: 15px;
+  width: 35%;
+  overflow-y: scroll; 
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 10px;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  color: white;
+}
+
+.modal-body {padding: 10px;}
+
+input {
+  width: 250px;
+  border: 2px solid cyan;
+  height: 35px;
+  border-radius: 5px;
+}
+
+input:hover {
+  background-color: darkgrey;
+  border: 2px solid orange;
+}
+
+input:focus {
+  background-color: lightgrey;
+  border: 2px solid olive;
+  outline: none;
+  
+}
+
+#But1 {
+  width: 200px;
+  padding: 7px 10px 7px 10px;
+  color: black;
+  background-color: dodgerblue;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+#But1:hover {
+  background-color: black;
+  color: red;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#But2 {
+	width: 200px;
+	padding: 7px 10px 7px 10px;
+	color: black;
+	background-color: dodgerblue;
+	font-weight: bold;
+	border: none;
+	border-radius: 15px;
+	outline: none;
+}
+#But2:hover {
+	background-color: black;
+	color: red;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

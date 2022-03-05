@@ -1,0 +1,221 @@
+::-webkit-scrollbar {display: none;}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+#loading {
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  background-color: black;
+  margin: auto;
+  text-align: center;
+}
+
+#loading-image {
+  margin-top: 14%;
+  width: 20%;  
+}
+
+#d2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333; 
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active1) {
+  background-color: #111;
+  text-decoration: none;
+}
+
+.active1 {
+  background-color: darkgrey;
+  text-decoration: none;
+}
+
+.active1:hover {
+  background-color: lightyellow;
+  text-decoration: none;
+}
+
+.Back {
+  max-width: 100%;
+  max-height: 90%;
+  position: absolute;
+  top: 48px;
+  margin: 0;
+}
+
+.img {
+  vertical-align: middle;
+  filter: brightness(35%);
+  height: 720px;
+}
+
+.crazy {
+  display: flex;
+}
+
+.main {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-size: 16px;
+  color: #f2f2f2;
+  width: 100%;
+  top: 18px;
+}
+
+.service {
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  margin: 2% auto auto auto;
+  text-align: center;
+  font-family: arial;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  padding: 20px;
+  color: black; 
+  transition: all .2s ease-in-out; 
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card:hover {
+  transform: scale(1.1);  
+  background: linear-gradient(to right, #f12711, #f5af19);
+}
+
+table {
+  padding: 5px;
+  font-size: 15px;  
+}
+
+.modal {
+  display: none; 
+  position: absolute;
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow-y: scroll; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  position: absolute;
+  background: linear-gradient(to right, #ef32d9, #89fffd);  
+  margin: -3% 60% auto auto;
+  padding: 0;
+  border: none;
+  max-height: calc(550px);
+  border-radius: 15px;
+  width: 35%;
+  overflow-y: scroll; 
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 10px;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  color: white;
+}
+
+.modal-body {padding: 10px;}
+
+input {
+  width: 250px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  height: 35px;
+  background-color: floralwhite;  
+}
+
+input:hover {
+  background-color: black;
+  color: red;
+}
